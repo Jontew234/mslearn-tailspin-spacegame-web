@@ -1,9 +1,10 @@
-  trigger:
+trigger:
   - '*'
-  pool:
-    vmImage: ubuntu-latest
-  
-  steps:
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
   - task: UseDotNet@2
     displayName: 'Use .NET SDK 6.x'
     inputs:
